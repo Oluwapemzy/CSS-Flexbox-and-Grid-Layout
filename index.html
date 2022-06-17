@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>FlexBox</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body {
+				background: hsl(0, 0%, 95%);
+				font-size: 15px;
+				color: hsla(0, 0%, 100%, 0.75);
+				/* margin: auto auto; */
+			}
+			.sedan-div {
+				background: hsl(31, 77%, 52%);
+				border-radius: 7px 0px 0px 7px;
+				height: 320px;
+				padding: 5%;
+				width: 240px;
+			}
+			.sedan-div button {
+				color: hsl(31, 77%, 52%);
+			}
+			.suv-div {
+				background: hsl(184, 100%, 22%);
+				border-radius: 0px 0px 0px 0px;
+				height: 320px;
+				padding: 5%;
+				width: 240px;
+			}
+			.suv-div button {
+				color: hsl(184, 100%, 22%);
+			}
+			.luxury-div {
+				background: hsl(179, 100%, 13%);
+				border-radius: 0px 7px 7px 0px;
+				height: 320px;
+				padding: 5%;
+				width: 240px;
+			}
+			.luxury-div button {
+				color: hsl(179, 100%, 13%);
+			}
+			main {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin: 10% auto;
+				background: hsl(0, 0%, 95%);
+				padding: 20px;
+				/* height: 70vh; */
+			}
+			.my-headings {
+				font-family: "Big Shoulders Display", cursive;
+				color: hsl(0, 0%, 95%);
+			}
+			button {
+				background: hsl(0, 0%, 95%);
+                border-radius: 30px;
+                height: 30px;
+                width: 100px;
+                border: hsl(0, 0%, 95%);
+                position: relative;
+                bottom: 0px;
+                font-weight: 700;
+			}
+			.my-ps {
+				font-family: "Lexend Deca", sans-serif;
+				color: hsla(0, 0%, 100%, 0.75);
+                height: 150px;
+                width: 150px;
+                /* margin-bottom: 30px; */
+			}
+            main div div img {
+                height: 30px;
+            }
+		</style>
+	</head>
+	<body>
+		<main>
+			<div class="sedan-div">
+				<div class="img-h2-p">
+					<img src="images/icon-sedans.svg" alt="" />
+					<h2 class="my-headings">SEDANS</h2>
+					<p class="my-ps">
+						Choose a sedan for its affordability and excellent fuel
+						economy. Tdeal for cruising in the city or on your next
+						road trip.
+					</p>
+				</div>
+				<button>Learn More</button>
+			</div>
+			<div class="suv-div">
+				<div class="img-h2-p">
+					<img src="images/icon-suvs.svg" alt="" />
+					<h2 class="my-headings">SUVS</h2>
+					<p class="my-ps">
+						Take an SUV for its spacious interior, power, and
+						versatility. Perfect for your next family vacation and
+						off-road adventures.
+					</p>
+				</div>
+				<button>Learn More</button>
+			</div>
+			<div class="luxury-div">
+				<div class="img-h2-p">
+					<img src="images/icon-luxury.svg" alt="" />
+					<h2 class="my-headings">SUVS</h2>
+					<p class="my-ps">
+						Cruise in the best car brands without the bloated
+						prices. Enjoy the enhanced comfort of a luxury rental
+						and arrive in style.
+					</p>
+				</div>
+				<button>Learn More</button>
+			</div>
+		</main>
+	</body>
+</html>
