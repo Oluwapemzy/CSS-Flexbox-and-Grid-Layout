@@ -18,18 +18,15 @@
 				box-sizing: border-box;
 			}
 			body {
-				background: hsl(0, 0%, 95%);
+				background: #1A1C28;
 				font-size: 15px;
-				/* color: hsla(0, 0%, 100%, 0.75); */
 				font-family: "Lexend Deca", sans-serif;
-                display: flex;
-                justify-content: center;
                 place-items: center;
-                min-height: 100vh;
 			}
 			nav {
 				padding: 20px;
 				font-family: "Lexend Deca", sans-serif;
+                background: hsl(0, 0%, 95%);
 			}
 			nav ul {
 				list-style: none;
@@ -44,11 +41,11 @@
 				display: grid;
 				grid-template-areas:
 					"a a a b"
-					"c d d d"
-					"c e e e";
+					"c c d d"
+					"c c e e";
 				gap: 10px;
-                width: 50%;
-                margin: auto;
+                width: 500px;
+                margin: 10px auto;
 			}
 			main div {
 				padding: 2rem;
@@ -66,7 +63,6 @@
 			.green {
 				background-color: #05AA42;
 				grid-area: c;
-                height: 150px;
 			}
 			.blue {
 				background-color: #01AEFD;
@@ -79,13 +75,13 @@
 		</style>
 	</head>
 	<body>
-		<!-- <nav>
-			<ul>
-				<li><a href="index.html">CSS Flexbox</a></li>
-				<li><a href="grid.html">CSS GRID LAYOUT</a></li>
-			</ul>
-		</nav> -->
-		<main>
+        <nav>
+            <ul>
+                <li><a href="index.html">CSS Flexbox</a></li>
+                <li><a href="grid.html">CSS GRID LAYOUT</a></li>
+            </ul>
+        </nav>
+        <main>
 			<div class="red"></div>
 			<div class="orange"></div>
 			<div class="green"></div>
