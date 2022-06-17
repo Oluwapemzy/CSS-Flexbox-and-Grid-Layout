@@ -1,17 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <nav>
-        <ul>
-            <li><a href="index.html">CSS Flexbox</a></li>
-            <li><a href="grid.html">CSS GRID LAYOUT</a></li>
-        </ul>
-    </nav>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"
+			rel="stylesheet"
+		/>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+			body {
+				background: hsl(0, 0%, 95%);
+				font-size: 15px;
+				/* color: hsla(0, 0%, 100%, 0.75); */
+				font-family: "Lexend Deca", sans-serif;
+                display: flex;
+                justify-content: center;
+                place-items: center;
+                min-height: 100vh;
+			}
+			nav {
+				padding: 20px;
+				font-family: "Lexend Deca", sans-serif;
+			}
+			nav ul {
+				list-style: none;
+				display: flex;
+				justify-content: space-between;
+			}
+			nav ul li a {
+				text-decoration: none;
+				color: hsl(31, 77%, 52%);
+			}
+			main {
+				display: grid;
+				grid-template-areas:
+					"a a a b"
+					"c d d d"
+					"c e e e";
+				gap: 10px;
+                width: 50%;
+                margin: auto;
+			}
+			main div {
+				padding: 2rem;
+				text-align: center;
+			}
+			.red {
+				background-color: #EB5020;
+				grid-area: a;
+			}
+			.orange {
+				background-color: #FFA401;
+				grid-area: b;
+			}
+			.green {
+				background-color: #05AA42;
+				grid-area: c;
+			}
+			.blue {
+				background-color: #01AEFD;
+				grid-area: d;
+			}
+			.sec-blue {
+				background-color: #01AEFD;
+				grid-area: e;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- <nav>
+			<ul>
+				<li><a href="index.html">CSS Flexbox</a></li>
+				<li><a href="grid.html">CSS GRID LAYOUT</a></li>
+			</ul>
+		</nav> -->
+		<main>
+			<div class="red"></div>
+			<div class="orange"></div>
+			<div class="green"></div>
+			<div class="blue"></div>
+			<div class="sec-blue"></div>
+		</main>
+	</body>
 </html>
